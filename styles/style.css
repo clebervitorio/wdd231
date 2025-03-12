@@ -3,7 +3,6 @@ body{
     font-family: 'Poppins', sans-serif;
     margin: 0 auto;
     padding: 50px;
-
 }
 
 /*header items photo and name*/
@@ -20,6 +19,8 @@ header{
     display: flex;
     justify-content: center; 
     align-items: center;
+    background-color: #164e70;
+    color: white; /*text color*/
     gap: 20px;
     padding: 20px;
 }
@@ -28,18 +29,40 @@ header{
 
     width: 20vw;
     max-width: 150px;
+}
 
+.top-link{
+
+    display: flex;
+    justify-content: right; 
+    align-items: center;
+    background-color: #164e70;
+    color: white; /*text color*/
+    gap: 20px;
+    padding: 20px;
+}
+
+ul a {
+
+    color: #fff;
+}
+
+ul li a {
+
+    color: rgba(0, 0, 0, 0.5);;
 }
 
 nav {
+
     display: flex;
     justify-content: space-between; 
     align-items: center;
     padding: 0;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.5);;
 }
 
 nav ul {
+
     display: flex; 
     align-items: center;
 }
@@ -49,6 +72,7 @@ nav ul li {
 }
 
 nav ul li a {
+
     padding: 0.5rem 1rem;
     align-items: center;
     display: inline-block;
@@ -59,25 +83,49 @@ nav ul li a {
 
 /*main*/
 main{
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
     gap: 10px;
     margin-top: 10px;
-    
 }
 /*course work*/
 .coursework{
+
     flex: 1;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     border: 2px solid transparent;
-    border-radius: 20px;
+    border-radius: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: white;
+    flex-direction: column;
+    justify-content: space-between;
     margin-bottom: 0px;
+}
+
+.coursework h2{
+
+    background-color: #164e70;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    margin: 0;
+    border-top-left-radius: 20px ;
+    border-top-right-radius: 20px ;
+}
+.coursework ul{
+
+    margin-left: 10px;
+    margin-bottom: 200px;
+    
+
+}
+
+.coursework ul li{
+
+    text-align: left;
     
 }
 
@@ -137,19 +185,22 @@ main{
 
 /************DIAALOG MODAL STYLES****************************/
 dialog {
+
     width: 50%;
     border: none;
     padding: 20px;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  dialog::backdrop {
+}
+
+dialog::backdrop {
+
     background-color: rgba(0, 0, 0, 0.5);
-  }
-  
-  button#closeModal {
+}
+
+button#closeModal {
+
     background: none;
     border: none;
     font-size: 20px;
@@ -157,12 +208,13 @@ dialog {
     top: 10px;
     right: 10px;
     cursor: pointer;
-  }
-  
+}
+
 /*************************************************************/
 
 
 footer{
+
     width: 100%;
     background-color: #164e70;
     gap:10px;
@@ -174,20 +226,18 @@ footer{
     justify-content: center;
     margin: 0 auto;
     align-items: center;
-    
 }
 
 footer p{
+
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    
 }
 footer img{
 
     width: 50px;
     height: auto;
-
 }
 
 /* Weather widget */
@@ -200,13 +250,12 @@ footer img{
    margin-top: 0;
    margin-bottom: 0;
    padding: 0;
+
 }
 
 .weather-info {
 
     display: block;
-    
-    
 }
 
 .weather-info .title{
@@ -217,6 +266,7 @@ footer img{
     margin: 0 auto;
     margin-top: 0;
 }
+
 .weather-footer {
     
     padding: 1px;
@@ -247,25 +297,28 @@ footer .weather-info{
     }
 
     .coursework ul {
+
         margin-bottom: 20px; /* Adjust botton margin in small screen */
     }
+
     .coursework ul{
 
         margin-left: 10px;
         margin-bottom: 200px;
-        
         }
 
-
     nav {
+
         display: none;
     }
 
     nav.active {
+
         display: block;
     }
 
     nav ul {
+
         flex-direction: column;
         background-color: #000;
         width: 100%;
@@ -273,11 +326,13 @@ footer .weather-info{
     }
 
     nav ul li {
+
         display: block;
         margin: 20px 0;
     }
 
     .course-card{
+
         width: 60%;
         margin: 0 auto;
     }
@@ -310,6 +365,7 @@ footer .weather-info{
     margin-top: 20px;
 }
 #course-links > ul {
+
     padding: 0 1rem 1rem 1rem;
     margin: 0;
     list-style: none;
@@ -317,6 +373,7 @@ footer .weather-info{
 }
 
 #course-links > ul > li {
+
     padding: 0.5rem;
     margin: 0.5rem;
     background-color: #E6EDEF;
@@ -325,30 +382,36 @@ footer .weather-info{
 }
 
 #course-links li:hover {
+
     background-color: rgb(169, 169, 169);
     cursor: pointer;
 }
 
 #course-links a:visited, #course-links a:link {
+
     text-decoration: none;
     color: black;
 }
 
 #course-links p {
+
     padding: 0 1rem 1rem 1rem;
 }
 
 #course-links .disabled {
+
     background-color: rgb(94, 94, 94);
     color: white;
 }
 
 #course-links .disabled:hover {
+
     cursor: auto;
 }
 
 /* Button to select of courses (All, CSE, WDD) */
 .selecting-buttons ul {
+
     list-style: none;
     padding: 0;
     display: inline-flex;
@@ -360,6 +423,7 @@ footer .weather-info{
 }
 
 .selecting-buttons li {
+
     background-color: rgb(88, 85, 85);
     color: white;
     border-radius: 0.3rem;
@@ -370,6 +434,7 @@ footer .weather-info{
 
 /* Grid's styles to the courses of section in taller screens */
 @media only screen and (min-width: 450px) {
+
     #course-links > ul {
         display: grid;
         grid: auto / repeat(3, auto);
@@ -378,12 +443,14 @@ footer .weather-info{
 
 /* Adjusting responsive of section of the courses */
 @media only screen and (min-width: 750px) {
+
     #course-links {
         grid-column: 1 / 3;
     }
 }
 /* Styles responsive to list of the courses */
 @media only screen and (min-width: 450px) {
+
     #course-links > ul {
         display: grid;
         grid: auto / repeat(3, auto);
@@ -391,16 +458,19 @@ footer .weather-info{
 }
 
 @media only screen and (min-width: 750px) {
+
     main {
         display: grid;
         grid: auto / 2fr 1fr;
     }
 
     #course-links {
-        grid-column: 1 / 3;
 
+        grid-column: 1 / 3;
     }
+
     #course-links h2{
+
         background-color: #164e70;
         display: block;
         text-align: center;
@@ -411,13 +481,13 @@ footer .weather-info{
         margin: 0;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
-
-        
     }
 }
 
 @media only screen and (max-width: 750px) {
+
     #city-details img {
+
         width: 100%;
         height: auto;
         max-width: 250px;
@@ -427,43 +497,51 @@ footer .weather-info{
 
 /* Styles menu navigation */
 nav {
+
     background: rgb(31, 31, 31);
     text-align: center;
     display: none;
 }
 
 nav li {
+
     padding: 0.5rem;
     padding-left: 2rem;
 }
 
 nav ul {
+
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
 nav li:hover {
+
     background-color: gray;
 }
 
 #x-icon {
+
     display: none;
 }
 
 /* Styles button for the header */
 #header-details button {
+
     background-color: transparent;
     border-style: none;
     color: white;
 }
 
 #header-details button:hover {
+
     cursor: pointer;
 }
 
 /* Styles list of the courses */
 #course-links > ul {
+
     padding: 0 1rem 1rem 1rem;
     margin: 0;
     list-style: none;
@@ -471,6 +549,7 @@ nav li:hover {
 }
 
 #course-links > ul > li {
+
     padding: 0.5rem;
     margin: 0.5rem;
     background-color:white;
@@ -480,28 +559,34 @@ nav li:hover {
 }
 
 #course-links > ul > li:hover {
-color: white;
+
+    color: white;
 }
 #course-links li:hover {
+
     background-color:  #0e89c2;
     cursor: pointer;
 }
 
 #course-links .disabled {
+
     background-color:  #0e89c2;
     color: white;
 }
 
 #course-links .disabled:hover {
+
     cursor: auto;
 }
 
 /* Style modal courses details */
 dialog::backdrop {
+
     background-color: rgba(0, 0, 0, 50%);
 }
 
 dialog {
+
     width: 50%;
     max-width: 600px; /* Limita a largura máxima para telas maiores */
     border: none;
@@ -516,6 +601,7 @@ dialog {
 }
 
 #dialog-header {
+
     display: flex;
     justify-content: space-between;
     background-color: var(--bg-headers);
@@ -524,35 +610,38 @@ dialog {
 }
 
 #dialog-body {
+
     padding: 1rem;
 }
 
 #close-dialog {
+
     background-color: transparent;
     border: none;
     color: rgb(255, 0, 0);
     font-size: 1.5rem;
-
 }
 
 
 #close-dialog:hover {
-    font-weight: 600;
 
+    font-weight: 600;
 }
 
 #close-dialog:focus {
+
     outline: none;
-    
 }
 
 
 #close-dialog:hover {
+
     cursor: pointer;
 }
 
 /* Button style of the courses selection */
 .selecting-buttons ul {
+
     list-style: none;
     padding: 0;
     display: inline-flex;
@@ -562,5 +651,3 @@ dialog {
     margin-bottom: 0.5rem;
     column-gap: 1rem;
 }
-
-
