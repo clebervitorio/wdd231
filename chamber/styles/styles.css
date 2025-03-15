@@ -1,0 +1,740 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+  
+ 
+}
+
+
+header {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+  /*animation: gradientShift 15s infinite;*/
+  background-color: rgba(255, 165, 0)
+  
+}
+
+.wayfinding{
+
+  
+  display: block;
+  margin-inline-end: auto;
+  padding: 0;
+  margin-left: 30px;
+  
+}
+div.wayfinding a {
+  color:darkgrey ;
+  text-decoration: underline;
+  margin: 5px;
+  
+}
+div.wayfinding{
+  
+  background-color:rgba(0, 0, 0, 0.1);
+}
+
+.container-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    z-index: 2;
+}
+.container-menu img{
+  width: 350px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  }
+
+header .logomarca{
+
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    
+}
+header .logomarca img{
+
+   max-width: 100%;
+    width: 200px;
+    height: auto;
+    margin-right: 5px;
+   
+    
+}
+
+
+nav {
+    max-width: 700px;
+    margin: 1rem auto;
+}
+
+/* small view navigation */
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #ff6600;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+       
+}
+
+ 
+
+#menu::before {
+    content: "☰";
+    color: #ff6600;
+    font-weight: 600;
+}
+
+#menu.open::before {
+    content: "X";
+    color: #ff6600;
+    font-weight: 600;
+}
+
+
+
+.navigation {
+  
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    color: #fff;
+}
+
+.navigation a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #0b1d39;
+    padding: 10px 15px;
+}
+
+.navigation a:hover {
+    color: white;
+}
+
+.navigation ul{
+
+    display: flex;
+    justify-content: center; /* Alinha os itens ao centro horizontalmente */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+    gap: 20px; /* Espaçamento entre os itens */
+    list-style: none;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open .navigation a {
+    display: block;
+}
+
+.active::before { 
+    content: "📍";  /* just a wayfinding symbol for the user */
+}
+
+header .social-media{
+    display: flex;
+    padding: 10px;
+    gap: 10px;        
+ }
+
+ .social-media img:hover {
+     transform: scale(1.1); 
+ }
+
+ header .botao-join-us button{
+    font-size: 1rem;
+    gap: 1px;  
+  
+    width: 100px;
+    background-color: #f06e04;
+    color: white;
+    padding: 10px;
+    border-radius: 8px; 
+    border: none;
+    outline: 2px solid #f9f9f9;
+    outline-offset: 5px; 
+   
+}
+header .botao-join-us button:hover {
+    background-color: #ff0000;;
+  }
+  .container {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+.container-initial {
+
+  display: flex; /* Usando flexbox */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  z-index: 1;
+ 
+  
+}
+
+
+#myVideo{
+
+      position: absolute; /* Para preencher todo o contêiner */
+      top: 0%;
+      left: 0;
+      width: 100%; /* O vídeo ocupa 100% da largura do contêiner pai */
+      height: auto; /* O vídeo ocupa 100% da altura do contêiner pai */
+      object-fit: cover;
+      z-index: -1;
+} 
+
+.container  h1{
+     
+  color: white; 
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  bottom: 0;
+  margin: 0 auto;
+  z-index: 50;    
+}
+
+/*hero form*/
+
+.hero-content{
+
+  position: absolute; /* Posiciona a div em relação ao elemento pai */
+  top: 30%; /* Define a distância do topo */
+  right: 30px; /* Define a distância da direita */
+  padding: 10px; /* Padding interno da div */
+  display: flex; /* Garante que o conteúdo dentro da div seja flexível */
+ 
+}
+.join-form {
+  
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background-color: orange;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  margin-right: 5%; /* Add margin on the right to give space */
+  outline: 2px solid #f9f9f9; /* Adiciona uma borda ao botão, afastada das margens */
+  outline-offset: 7px; /* Afasta a borda das margens do botão */
+  z-index: 9999;
+}
+.join-form label {
+  color: white;
+  font-size: 0.5rem;
+  text-align: left;
+  
+}
+
+.join-form input {
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+}
+
+.cta-button {
+  background-color: #ff5100;
+  color: white;
+  padding: 10px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 4px;
+  margin-top: 15px; /* Space above the button */
+}
+
+.join-form .cta-button:hover {
+  background-color: #ff0000;
+}
+
+
+/* Estilos das seções individuais */
+#events, #weather, #spotlights{
+  
+  
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra leve nas seções */
+  padding: 20px; /* Espaçamento interno das seções */
+  
+  min-height: 300px;
+  
+  background-color:rgba(255, 255, 255, 0.8);
+    
+  
+}
+
+#grid-events{
+
+  display: flex;
+  gap: 1%;
+  padding: 1%;
+  margin-top: -45%;
+}
+
+/* Estilo dos títulos das seções */
+#spotlights h4{
+  font-size: 1.5rem;
+  color: #333;
+  text-align: center;
+}
+
+#spotlights h5{
+  font-size: 1rem;
+  color: #333;
+  text-align: center;
+}
+
+#events h2{
+
+  margin-top: 10px;
+  font-size: 1.5rem;
+  color: #333;
+  text-align: center;
+}
+.place h3 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  color: #333;
+  text-align: center;
+}
+
+#events{
+
+  
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  
+}
+/* Estilo específico para a lista de eventos */
+#eventList {
+  list-style-type: none; /* Remove os marcadores da lista */
+  
+}
+
+#eventList li {
+  
+  margin: 0 auto; /* Espaçamento entre os itens da lista */
+  font-size: 1rem;
+  color: #555;
+
+}
+#events li{
+
+  text-align: center;
+}
+
+.place{
+  flex: 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra leve nas seções */
+  border-radius: 10px;
+  background-color: white;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.place h2{
+  
+  padding: 20px;
+  text-align: center;
+  color: #333;
+  margin: 0;
+  border-top-left-radius: 20px ;
+  border-top-right-radius: 20px ;
+}
+
+.place img{
+  display: block;
+  max-width: 300px;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.weather-widget p{
+  
+  text-align: center;
+  font-weight: 600;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  
+  flex-direction: column;
+
+}
+
+/************************/
+#weather-info {
+  text-align: center;
+}
+
+#weather-info p {
+  font-size: 1rem;
+  color: #555;
+}
+
+#weather-icon{
+
+  width: 100px;
+}
+
+#forecast {
+  
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+     
+  
+}
+
+
+/* Estilo para a seção de destaque de membros */
+
+.spotlightsfilter {
+  
+  display: flex;
+  height: auto;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 15px;
+  margin-left: 20px;
+  
+  
+}
+
+/* Estilização adicional para os cards de destaque */
+.spotlight-card {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: auto;
+  border-radius: 8px; /* Bordas arredondadas */
+  border: 2px solid rgb(231, 230, 230);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra do card */
+  padding: 16px; /* Padding interno do card */
+  text-align: center; /* Centraliza o texto dentro do card */
+}
+
+.spotlight-card img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100px; /* Largura da imagem */
+  height: auto; /* Altura automática para manter a proporção */
+  margin-bottom: 8px; /* Espaçamento abaixo da imagem */
+}
+h3{
+
+  text-align: center;
+}
+.spotlight-card h3 {
+  
+  font-size: 1.2em; /* Tamanho da fonte do título */
+  
+}
+
+.spotlight-card p {
+  margin: 4px 0; /* Margens para os parágrafos */
+}
+
+#forecast {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px;
+  max-width: 100%;
+  width: 450px;
+}
+
+.day-forecast {
+
+  background-color: #ffff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+  text-align: center;
+  color: #413f3f;
+  width: 100%;
+  height: auto;
+}
+
+.day-forecast img {
+  width: 50px;
+  height: auto;
+  }
+
+.weather-info .icon {
+  display: flex;
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center;     /* Centraliza o conteúdo verticalmente */
+}
+  .weather-info .icon img {
+      max-width:100%; /* Defina a largura máxima da imagem para garantir que não seja muito grande */
+      height: auto;     /* Mantém a proporção da imagem */
+      margin-bottom: 10px;
+  }
+/* Estilo para a seção de previsão do tempo */
+
+/*footer*/
+footer {
+  width: 100%;
+  background-color: #0b1d39;
+  color: white;
+  text-align: center;
+  padding: 10px 10px;
+  
+}
+footer a{
+     
+  font-size: 0.8rem;
+  color: rgb(179, 177, 177);
+  
+}
+footer .nav-footer lu{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+footer .nav-footer ul li {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;    
+  margin: 0 10px; /* Espaçamento entre os itens */
+  display: inline-block;
+  
+}
+footer .social-footer img{
+
+  width: 30px;
+  height: auto;
+  margin-bottom: 1%;
+  
+}
+
+#logo-footer{
+
+  width: 150px;
+  height: auto;
+}
+
+footer .menu-footer img{
+  max-width: 100%;
+  width: 250px;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+footer p.copyrigths {
+  
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 11px;
+}
+/* Exibe a última modificação e o ano atual */
+#lastModified, #current-year {
+  display: inline-block;
+  color: #ccc; /* Cor mais clara para destacar menos */
+}
+
+ /* large view navigation ************************************/
+ @media (min-width: 37.5em) {
+      
+  #menu {
+      display: none; /* hide hamburger button */
+  }
+
+      
+}
+@media(max-width: 768px) {
+  .wayfinding {
+    display: none;
+  }
+
+  header .social-media {
+    display: none;
+  }
+
+  .botao-join-us {
+    display: none;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .navigation a {
+    display: block;
+  }
+
+  .navigation.open {
+    display: flex; /* Mostra o menu quando aberto */
+    flex-direction: column; /* Coloca os itens em coluna */
+    position: absolute; /* Para sobrepor outros elementos */
+    top: 50px; /* Ajuste conforme necessário */
+    right: 0;
+    background-color: #f06e04;
+    padding: 10px 0; /* Espaçamento interno */
+    z-index: 1000; /* Para garantir que fique sobre outros elementos */
+  }
+
+  #myVideo {
+    /* position: absolute; /* Para preencher todo o contêiner */
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    width: 100%; /* O vídeo ocupa 100% da largura do contêiner pai */
+    height: 50vh; /* O vídeo ocupa 50% da altura da viewport */
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  .hero-content {
+    position: relative;
+    top: 5%; /* Define a distância do topo */
+    z-index: 10; /* Coloca a div acima de outros elementos se necessário */
+    right: -20px;
+    padding: 10px;
+  }
+
+  .join-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    transform: translate(-50%, 0);
+    padding: 10px;
+    max-width: 350px;
+    margin-right: 0%; /* Adiciona margem à direita para dar espaço */
+  }
+
+  .container-menu img {
+    max-width: 250px;
+    width: 250px;
+    height: auto;
+  }
+
+  #events {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 8%;
+  }
+
+  #grid-events {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    gap: 1%;
+    padding: 1%;
+    margin-top: 0;
+  }
+
+  #events img {
+    margin-top: 10px;
+    max-width: 100%;
+    width: 85%;
+    height: auto;
+    padding: 30px;
+  }
+
+  .weather-info .icon {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+  }
+
+  .weather-info .icon img {
+    max-width: 100%; /* Defina a largura máxima da imagem para garantir que não seja muito grande */
+  }
+
+  #events h2, #weather h2, #spotlights h2 {
+    font-size: 1.5rem;
+    color: #ff7c02;
+    font-weight: 600;
+  }
+
+  .spotlightsfilter {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 15px;
+  }
+
+  .spotlight-card {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Bordas arredondadas */
+    border: none;
+    box-shadow: none;
+    padding: 16px; /* Padding interno do card */
+    text-align: center; /* Centraliza o texto dentro do card */
+  }
+  .container  h1{
+     
+    color: white; 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    margin: 0 auto;
+    z-index: 50; 
+    font-size: 0.6rem;   
+  }
+}
