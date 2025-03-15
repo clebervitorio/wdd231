@@ -15,8 +15,8 @@
         "name": "Nuances",
         "address": "123 Main St, Tech City, TX 75001",
         "phone": "(123) 456-7890",
-        "website": "https://www.nuancesrequinte.com/",
-        "icon": "./images/nuancescolor.webp",
+        "website": "https://aubay.com/en/",
+        "icon": "./images/aubay.webp",
         "membershipLevel": 3,
         "additionalInfo": {
         "description": "Leading provider of IT consulting and software solutions.",
@@ -39,7 +39,7 @@
         "name": "Leonardo AI",
         "address": "789 Ocean Blvd, Sun City, FL 32004",
         "phone": "(345) 678-9012",
-        "website": "https://app.leonardo.ai/?via=cou2&gad_source=1&gclid=Cj0KCQjwsJO4BhDoARIsADDv4vB_Lcm2-8kJ-ZxB0KmBm4v16c-zg9G9hxQx8ahvqirqSQ6qLk_yvGQaAp6FEALw_wcB",
+        "website": "https://app.leonardo.ai/",
         "icon": "./images/leo.png",
         "membershipLevel": 3,
         "additionalInfo": {
@@ -63,8 +63,8 @@
         "name": "meo",
         "address": "654 Armor Ave, Defense City, TX 76001",
         "phone": "(567) 890-1234",
-        "website": "https://en.meo.pt/",
-        "icon": "./images/meo.png",
+        "website": "https://nos.pt/",
+        "icon": "./images/nos.png",
         "membershipLevel": 2,
         "additionalInfo": {
         "description": "High-tech security solutions for businesses and homes.",
@@ -87,7 +87,7 @@
         "name": "behance",
         "address": "111 Workout Dr, Fit City, NY 10001",
         "phone": "(789) 012-3456",
-        "website": "https://www.behance.net/gallery/181492339/Playing-Colors-Images#",
+        "website": "https://www.behance.net",
         "icon": "./images/behance.png",
         "membershipLevel": 3,
         "additionalInfo": {
