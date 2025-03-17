@@ -2,14 +2,15 @@ body{
 
     font-family: 'Poppins', sans-serif;
     margin: 0 auto;
-    padding: 50px;
+    padding: 3%;
+    overflow-x: hidden; 
 }
 
 /*header items photo and name*/
 header{
 
     text-align: center;
-    background-color: #164e70;
+    background-color: #164e70; 
     color: white; /*text color*/
     position: relative; 
 }
@@ -17,18 +18,20 @@ header{
 .top-menu{
 
     display: flex;
+    flex-direction: column;
     justify-content: center; 
     align-items: center;
     background-color: #164e70;
     color: white; /*text color*/
-    gap: 20px;
-    padding: 20px;
+    gap: 1%;
 }
 
 .top-menu img{
 
     width: 20vw;
     max-width: 150px;
+    border-radius: 15%;
+    padding: 1%;
 }
 
 .top-link{
@@ -49,7 +52,7 @@ ul a {
 
 ul li a {
 
-    color: rgba(0, 0, 0, 0.5);;
+    color: rgba(0, 0, 0, 0.5);
 }
 
 nav {
@@ -58,7 +61,7 @@ nav {
     justify-content: space-between; 
     align-items: center;
     padding: 0;
-    background-color: rgba(0, 0, 0, 0.5);;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 nav ul {
