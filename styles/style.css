@@ -10,8 +10,8 @@ body{
 header{
 
     text-align: center;
-    background-color: #164e70; 
-    color: white; /*text color*/
+    background-color: rgba(255, 165, 0); 
+    color: #0b1d39; /*text color*/
     position: relative; 
 }
 
@@ -21,8 +21,8 @@ header{
     flex-direction: column;
     justify-content: center; 
     align-items: center;
-    background-color: #164e70;
-    color: white; /*text color*/
+    background-color: rgba(255, 165, 0);
+    color: #0b1d39; /*text color*/
     gap: 1%;
 }
 
@@ -39,20 +39,20 @@ header{
     display: flex;
     justify-content: right; 
     align-items: center;
-    background-color: #164e70;
-    color: white; /*text color*/
+    background-color: rgba(255, 165, 0);
+    color: #0b1d39; /*text color*/
     gap: 20px;
     padding: 20px;
 }
 
 ul a {
 
-    color: #fff;
+    color: #0b1d39;
 }
 
 ul li a {
 
-    color: rgba(0, 0, 0, 0.5);
+    color: #0b1d39;
 }
 
 nav {
@@ -61,7 +61,7 @@ nav {
     justify-content: space-between; 
     align-items: center;
     padding: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #0b1d39;
 }
 
 nav ul {
@@ -219,7 +219,7 @@ button#closeModal {
 footer{
 
     width: 100%;
-    background-color: #164e70;
+    background-color: #0b1d39;
     gap:10px;
     text-align: center;
     color: white;
