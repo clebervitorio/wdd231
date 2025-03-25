@@ -1,0 +1,477 @@
+
+body {
+    padding:0; 
+}
+
+/* Navbar Brand (Logo) */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    flex-grow: 1; 
+}
+
+/* Adjust logo container size */
+.logo-container {
+    width: 60px; 
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo-container img {
+    max-width: 100%;
+    height: auto; 
+}
+
+/* Navbar Menu and Links */
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+.navbar-items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-item {
+    margin-left: 20px;
+}
+
+.nav-icon {
+    margin-left: 30px;
+    width: 28px !important;       
+    height: 28px !important; 
+}
+
+.navbar-link {
+    font-size: 17px;
+    color: #000;
+    text-decoration: none;
+}
+
+.navbar-link:hover {
+    text-decoration: underline;
+    color: #333;
+}
+
+.navbar-link.active {
+    text-decoration: underline;
+    color: #333;
+}
+
+.navbar-icons {
+    display: flex;
+    align-items: center;
+    margin-left: auto; 
+}
+
+.nav-icon {
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+    
+}
+
+div.wayfinding li{
+
+    list-style: none;
+    display: inline-block;
+}
+
+
+/* DISCOVER HEADING ==================================================================*/
+.discover-section {
+    width: 90%; 
+    max-width: 1100px; 
+    margin: 0 auto; 
+    padding: 25px 0;
+    text-align: left; 
+    margin-top: 60px;
+    margin-bottom: -140px;
+}
+
+
+
+/* General sidebar styling */
+.sidebar {
+    padding: 20px;
+    width: 100%; 
+}
+
+
+/* Full-width HR line inside the sidebar */
+
+
+/* Card style for each section */
+.sidebar .local-section,
+.sidebar .advertisement,
+.sidebar .business-highlight {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+    
+}
+
+/* Hover effect for the card */
+.sidebar .local-section:hover,
+.sidebar .advertisement:hover,
+.sidebar .business-highlight:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    
+}
+
+/* Style for the advertisement image */
+.advert-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; 
+    margin-top: 10px;
+}
+
+/* Heading styles inside the sidebar cards */
+.sidebar h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Text and list styles */
+.sidebar p,
+.sidebar ul {
+    font-size: 1rem;
+    color: #555;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 8px;
+}
+
+
+.container #tittle-discover-aside{
+    color: #000000;
+    text-align: left;
+    margin-right: 80%;
+    width: 30%;
+    
+
+}
+/* Beautified Visitor Message Card =======================================================*/
+.visitor-message-card {
+    
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #272727;
+    line-height: 1.5;
+    min-height: 100px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.visitor-message-card p {
+    margin: 0;
+    color: #353434;
+}
+
+.visitor-message-card {
+    /*background-color: rgba(255, 165, 0, 0.5);*/
+    border: 2px solid rgba(255, 165, 0);
+    border-radius: 15px;
+}
+
+/* Responsive design for mobile */
+
+.event-name {
+    font-size: 1rem;
+    color: #333;
+    font-weight: 600;
+    flex: 1;
+}
+
+.event-date {
+    font-size: 0.9rem;
+    color: #333;
+    font-weight: 500;
+    white-space: nowrap; 
+    padding-left: 20px; 
+}
+.container #tittle-discover-aside{
+    color: #000000;
+    text-align: left;
+    margin-right: 70%;
+    width: 30%;
+    font-size: 1.5rem;
+    
+
+}
+
+/* Featured Business Styling =========================================================*/
+.business-highlight {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.highlight-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border: 0.2px solid #dbd9d9;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    
+}
+
+.highlight-info h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.highlight-info img{
+
+    max-width: 100%;
+    width: 350px;
+    height: auto;
+}
+
+.highlight-info p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.highlight-badge {
+    display: flex;
+    align-items: center;
+}
+
+.highlight-badge .badge {
+    padding: 8px 12px;
+    background-color: #854700;
+    color: #fff;
+    font-size: 0.8rem;
+    border-radius: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+/* Beautified Local Attractions Section ================================================*/
+.local-section {
+    margin-bottom: 20px;
+}
+
+.local-section h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.local-attractions-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.local-attractions-card p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
+    text-align: left;
+}
+
+/* Active Selected sidebar item styling */
+.sidebar .selected, .advertisement, .business-highlight {
+    
+    padding: 10px;
+    border: 2px solid rgba(255, 165, 0);
+    
+}
+
+/* Advertisement image */
+.advert-image {
+    max-width: 100%;
+    width: 350px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+#startup{
+    
+    max-width: 599px;
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    
+}
+
+/* Gallery, Grid layout ======================================================================*/
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1.3fr 3fr; 
+    gap: 20px;
+    margin-top: 0;
+}
+
+
+
+.gallery .inner_img {
+    width: 70%;
+    height: 460px;
+    margin-bottom: 20px;
+    border-radius: 20px; 
+    overflow: hidden; 
+    padding: 0; 
+    position: relative;
+    box-shadow: 0 8px 5px rgba(0, 0, 0, 0.2);
+    background-color: transparent; 
+}
+
+.gallery {
+    margin-top: 0;
+}
+
+.gallery .inner_img img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    object-fit: contain; 
+    border-radius: 20px; 
+}
+
+.gallery .inner_img:hover {
+    transform: translateY(-20px); 
+}
+
+.gallery .inner_img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    pointer-events: none; 
+}
+
+/* Styling the figcaption */
+.gallery .inner_img figcaption {
+
+    display: flex;
+    flex-direction: column;
+    gap: 25Px;
+    position: absolute;
+    margin-bottom: 20px; /* Alinha o figcaption na parte inferior */
+    left: 50%; /* Centraliza horizontalmente, começando do centro */
+    transform: translateX(-50%); /* Corrige o deslocamento para uma centralização perfeita */
+    /*background-color: rgba(0, 0, 0, 0.7); /* Cor de fundo com transparência */
+    color: rgba(255, 165, 0); /* Cor do texto branca */
+    padding: 8px 12px; /* Espaçamento interno */
+    font-size: 22px; /* Tamanho da fonte */
+    border-radius: 5px; /* Bordas arredondadas */
+    z-index: 30; /* Mantém o figcaption acima da imagem */
+    text-align: center; /* Centraliza o texto dentro do figcaption */
+    font-weight: bold; /* Negrito */
+}
+.gallery .inner_img figcaption:hover {
+    color: #f06e04;
+}
+
+
+/* Hide images by default =============================================================*/
+/* Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Styles */
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inner_img {
+    width: 80%;
+    margin: 2rem auto;
+    overflow: hidden;
+}
+
+.img {
+    
+    opacity: 0; 
+   }
+
+.img.loaded {
+    opacity: 1; 
+}
+
+
+/* Hover effect for desktop view */
+@media (min-width: 1260px) {
+    
+    .gallery img:hover {
+        transform: scale(1.05);
+        filter: brightness(0.9);
+        border: 6px solid #fff;
+    }
+
+    .gallery img {
+        border: 6px solid #fff;
+    }
+}
+
+/* Responsive: Single column layout for mobile view */
+@media (max-width: 992px) {
+    .grid-layout {
+        grid-template-columns: 1fr;
+    }
+    
+    .sidebar {
+        width: 100vw;
+    }
+
+    .gallery .inner_img {
+        width: 100%;
+        padding-left: 0; 
+        padding-right: 0;
+    }
+
+    .gallery .inner_img:hover {
+        transform: none !important;
+        cursor: none;
+        transition: 0s;
+    }
+
+    .attraction-section {
+        margin-top: 0;
+    }
+}
