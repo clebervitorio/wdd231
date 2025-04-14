@@ -85,13 +85,13 @@ h2 {
 
   @media (max-width: 500px) {
     .hero-section {
-      background-image: url("../images/kombine01jpg.webp");
+      background-image: url("./images/kombine01jpg.webp");
     }
   }
   
   @media (min-width: 1001px) {
     .hero-section {
-      background-image: url("../images/kombine01jpg.webp");
+      background-image: url("./images/kombine01jpg.webp");
     }
   }
 
