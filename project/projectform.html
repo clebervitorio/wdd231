@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W06 Project: Completion</title>
+    <meta name="description" content="A WDD website showing my project">
+    <meta name="author"  content="Cleber Vitorio">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/projectform.css">
+    
+    <script src="./scripts/projectform.js" type="text/javascript" defer></script>
+
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <img class="logo-img" src="./images/logoteste.png" alt="kombine-icon" loading="lazy">
+            <div class="logo">
+                <h1 class="logo">Kombine with your party</h1> </div>
+
+            <nav class="nav-links">
+                <ul id="nav-links">
+                    <li><a href="project.html">Home</a></li>
+                    <li><a href="projectform.html">Contact us</a></li>
+                    <li><a href="about.html">About us</a></li>
+                </ul>
+            </nav>
+
+            <nav class="menu">
+                <ul >
+                    <li><a href="project.html">Home</a></li>
+                    <li><a href="projectform.html">Contact us</a></li>
+                    <li><a href="about.html">About us</a></li>
+                </ul>
+            </nav>
+            
+           
+            <div class="hamburger" id="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div  class="bar"></div>
+            </div>
+        </div>
+    </header>
+    <main id="main-content">
+        <h2 id="h2-formpage">Contact us</h2>
+        <form id="applicationform" method="get" action="projectreviewform.html">
+        <label for="CollegeName">Select your party</label>
+        <select id="CollegeName" name="CollegeName" required>
+            <option value="" disabled selected>Select your party ...</option>
+        </select>
+
+        <label for="Birthdate"> Enter your date of the party</label>
+        <input type="date" id="installationDate" name="installationDate" required>
+
+        <label>Where will your party be? (Check all that apply)</label>
+        <div class="features">
+            <div class="feature-item">
+                <input type="checkbox" id="Club" name="features" value="Club">
+                <label for="club">Club</label>
+            </div>
+            <div class="feature-item">
+                <input type="checkbox" id="Farm" name="features" value="Farm">
+                <label for="farm">Farm</label>
+            </div>
+            <div class="feature-item">
+                <input type="checkbox" id="Ceremonial" name="features" value="Ceremonial">
+                <label for="ceremonial">Ceremonial</label>
+            </div>
+            <div class="feature-item">
+                <input type="checkbox" id="Outdoor" name="features" value="Outdoor">
+                <label for="outdoor">Outdoor</label>
+            </div>
+            <div class="feature-item">
+                <input type="checkbox" id="Beach" name="features" value="Beach">
+                <label for="beach">Beach</label>
+            </div>
+            <div class="feature-item">
+                <input type="checkbox" id="none" name="features" value="none">
+                <label for="none">None</label>
+            </div>
+        </div>
+
+        <label for="writtenReview">If you wish, tell us what your party will be like! (Optional)</label>
+        <textarea id="writtenReview" name="writtenReview"></textarea>
+
+        <label for="userName">Your Name and Contact</label>
+        <input type="text" id="userName" name="userName">
+
+        <input type="submit" value=" Submit">
+    </form>
+    <footer>
+       <p>©2025 - Cleber Vitorio - Portugal</p>  
+       <p id="lastModified"></p>
+    </footer>
+
+    </main>
+    
+</body>
+</html>

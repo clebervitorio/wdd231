@@ -1,0 +1,215 @@
+:root {
+    --primary-color: #88929c;
+    --secondary-color: #1a3f5f;
+    --accent-color: #09077a;
+    --bg-color: rgb(37, 109, 46);
+    --text-color: #343a40;
+    --hover-color: #26970a;
+    --weather-icon-size: 20px;
+}
+
+body {
+    display: grid;
+    max-width: 100%;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+        "nav"
+        "main"
+        "footer";
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(215, 230, 230);
+    color: rgb(0, 0, 0);
+    /*overflow-x: hidden; /* Prevent horizontal scrolling */
+    
+}
+
+#main-content{
+    
+    display: flex;
+    background-image: url("../images/bkg-about-us.jpg");
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+.navbar a {
+    font-weight: bold;
+}
+
+.about {
+    width: 30%;
+    height: 80%;
+    font-size: 180%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+    
+}
+
+.menu li a {
+    color: white;
+}
+
+main {
+    grid-area: main;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 165, 0);
+    margin-bottom: 0%;
+    color: white;
+    font-weight: bold;
+}
+
+.data {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 40%;
+    max-width: 600px;
+}
+
+header {
+    color: #0c0b0b;
+    z-index: 999;
+}
+
+table {
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 760px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas: 
+            "nav"  
+            "main" 
+            "footer";
+        padding: 10px;
+    }
+
+    .data {
+        max-width: 100%;
+        margin: 0;
+        padding: 10px;
+        position: relative;
+        width: 100%;
+        background-color: rgba(146, 146, 146, 0.199);
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+    }
+    .hamburger {
+        display: flex;
+    }
+    .menu {
+        display: none;
+    }
+    main div figure img {
+        width: 380px;
+        height: 320px;
+        gap: 10px;
+    }
+    main {
+        padding-top: 15%;
+    }
+
+    #nav-links.show {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(255, 165, 0);
+        position: absolute;
+        top: 0%;
+        width: 100%;
+        right: 0%;
+        transition: all 0.3s ease;
+    }
+
+    #nav-links li a {
+        text-decoration: none;
+        font-size: 100%;
+        list-style-type: none;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding: 10%;
+        color: white;
+    }
+
+    #nav-links li a:hover {
+        background-color: rgb(167, 28, 4);
+    }
+
+    #nav-links li {
+        list-style-type: none;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 8%;
+    }
+}
+
+.hamburger.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open .bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger.open .bar:nth-child(3) {
+    transform: translateY(-15px) rotate(-45deg);
+}
+
+/* Gallery Styling */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
