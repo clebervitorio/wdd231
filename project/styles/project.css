@@ -69,7 +69,7 @@ h2 {
 #main-project{
     
     display: flex;
-    background-image: url("../images/Kombine01jpg.webp");
+    background-image: url("../images/Kombine01.webp");
     background-size:contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -85,13 +85,13 @@ h2 {
 
   @media (max-width: 500px) {
     .hero-section {
-      background-image: url("./images/kombine01jpg.webp");
+      background-image: url("./images/kombine01.webp");
     }
   }
   
   @media (min-width: 1001px) {
     .hero-section {
-      background-image: url("./images/kombine01jpg.webp");
+      background-image: url("./images/kombine01.webp");
     }
   }
 
